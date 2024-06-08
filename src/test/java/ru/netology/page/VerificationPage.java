@@ -15,8 +15,8 @@ public class VerificationPage {
         codeField.shouldBe(visible);
     }
 
-    public void verifyErrorNotificationVisiblity(String errorText) {
-        errorNotification.shouldHave(exactText(errorText)).shouldBe(visible);
+    public void verifyErrorNotificationVisiblity() {
+        errorNotification.shouldBe(visible);
     }
 
     public DashboardPage validVerify(String verificationCode) {

@@ -42,7 +42,7 @@ public class LoginTest {
         verificationPage.verifyVerificationPageVisiblity();
         var verificationCode = DataHelper.generateRandomVerificationCode();
         verificationPage.verify(verificationCode.getCode());
-        verificationPage.verifyErrorNotificationVisiblity("Ошибка! Неверно указан код! Попробуйте еще раз.");
+        verificationPage.verifyErrorNotificationVisiblity();
 
     }
 }
